@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+  }
+
+#wrapper{
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width:1200px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 300px;
+    height: 455px;
+    background-color:#03071e;
+    border-radius: 15px;
+}
+
+.display{
+    color:white;
+    background-color: #051923;
+    width:97%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0.2rem;
+    height: 3rem;
+    word-wrap: break-word;
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+button{
+   margin: 1rem;
+   border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    font-size: 2rem;
+    outline: none;
+    outline: #03071e;
+    font-family: 'Open Sans';
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.opbutton{
+    background-color: rgb(173, 98, 6);
+    outline: #03071e;
+}
