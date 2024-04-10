@@ -13,11 +13,7 @@ document.querySelector('#clear').addEventListener('click',function(){
 
 // function to calculate the final result of the expression that is entered by the user
 function calculate(){
-    try{
+        
         display.textContent= eval(display.textContent);
         console.log(display.textContent);
-    }
-    catch(error){
-        display.value= "ERROR";
-    }
 }
